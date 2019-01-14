@@ -21,7 +21,7 @@ Now `s-c.sh/medium` will redirect to the styled-components Medium publication, a
 
 #### From the command line
 
-You need to set up this repository locally to add new redirects:
+To use the `netlify-shortener` CLI (which is not necessary!) you need to set up this repository locally:
 
 1. Clone the repo with `git clone git@github.com:styled-components/s-c.sh`
 2. Install the dependencies with `npm install` (or `yarn`)
