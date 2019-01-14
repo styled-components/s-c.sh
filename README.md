@@ -13,7 +13,7 @@ Redirects are added to the `_redirects` file, which is automatically deployed to
 [Edit the `_redirects` file](https://github.com/styled-components/s-c.sh/edit/master/_redirects) and add your redirect at the very top in the format `/<short>    https://link.com`. For example:
 
 ```sh
-/medium    https://medium.com/styled-components
+/medium     https://medium.com/styled-components
 /css-prop   https://medium.com/styled-components/announcing-native-support-for-the-css-prop-in-styled-components-245ca5252feb
 ```
 
