@@ -2,15 +2,9 @@
 
 The styled-components link shortener, based on [`netlify-shortener`](https://github.com/kentcdodds/netlify-shortener).
 
-## How does it work?
+## Adding new redirects
 
-Redirects are added to the `_redirects` file, which is automatically deployed to Netlify and handled by them.
-
-### Adding new redirects
-
-#### From the GitHub UI
-
-[Edit the `_redirects` file](https://github.com/styled-components/s-c.sh/edit/master/_redirects) and add your redirect at the very top in the format `/<short>    https://link.com`. For example:
+All you have to do to add a new short link is to [edit the `_redirects` file](https://github.com/styled-components/s-c.sh/edit/master/_redirects) and add your redirect at the very top in the format `/<short>    https://link.com`. For example:
 
 ```sh
 /medium     https://medium.com/styled-components
@@ -19,7 +13,7 @@ Redirects are added to the `_redirects` file, which is automatically deployed to
 
 Now `s-c.sh/medium` will redirect to the styled-components Medium publication, and `s-c.sh/css-prop` to the CSS prop announcement post! :tada:
 
-#### From the command line
+### From the command line
 
 To use the `netlify-shortener` CLI (which is not necessary!) you need to set up this repository locally:
 
@@ -36,6 +30,10 @@ npm run shorten https://styled-components.com/docs d # s-c.sh/d will redirect to
 ```
 
 Note that you need to have **write access to the repository** to make this happen. If that is not the case, you'll need to fork the repo first and push to your fork before submitting a PR.
+
+## How does it work?
+
+Redirects are added to the `_redirects` file, which is deployed to Netlify and handled by them. The `master` branch in this repo is always in sync with s-c.sh!
 
 ## License
 
