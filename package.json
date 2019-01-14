@@ -1,0 +1,14 @@
+{
+  "name": "s-c.sh",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Max Stoiber (@mxstbr)",
+  "license": "MIT",
+  "baseUrl": "https://s-c.sh",
+  "scripts": {
+    "shorten": "netlify-shortener"
+  },
+  "devDependencies": {
+    "netlify-shortener": "^1.0.3"
+  }
+}
