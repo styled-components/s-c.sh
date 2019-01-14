@@ -8,6 +8,19 @@ Redirects are added to the `_redirects` file, which is automatically deployed to
 
 ### Adding new redirects
 
+#### From the GitHub UI
+
+[Edit the `_redirects` file](https://github.com/styled-components/s-c.sh/edit/master/_redirects) and add your redirect at the very top in the format `/<short>    https://link.com`. For example:
+
+```sh
+/medium    https://medium.com/styled-components
+/css-prop   https://medium.com/styled-components/announcing-native-support-for-the-css-prop-in-styled-components-245ca5252feb
+```
+
+Now `s-c.sh/medium` will redirect to the styled-components Medium publication, and `s-c.sh/css-prop` to the CSS prop announcement post! :tada:
+
+#### From the command line
+
 You need to set up this repository locally to add new redirects:
 
 1. Clone the repo with `git clone git@github.com:styled-components/s-c.sh`
